@@ -30,7 +30,7 @@ func main () {
 	for scanner.Scan() {
 		n, err := strconv.Atoi(scanner.Text())
 		checkErr(err)
-		fmt.Printf("[%d]: Case #%d: %d\n", n, caseCounter, calcLastTidy(n))
+		fmt.Printf("Case #%d: %d\n", caseCounter, calcLastTidy(n))
 		
 		caseCounter++
 	}
